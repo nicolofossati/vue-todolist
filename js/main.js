@@ -19,6 +19,7 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
+        newText: "",
         tasks : [
             {
                 text: "Task 1",
@@ -38,6 +39,13 @@ const { createApp } = Vue
     methods : {
         remove_task(index){
             this.tasks.splice(index,1);
+        },
+
+        addTask(text){
+            this.tasks.push({});
+            this.tasks[this.tasks.length-1].text= text;
+            this.tasks[this.tasks.length-1].done= false;
+            this.newText="";
         }
         
     }

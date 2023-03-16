@@ -23,8 +23,8 @@
         <div class="container">
             <h1 class="title">To do list</h1>
             <div class="create-task-container">
-                <input type="text">
-                <button>Aggiungi</button>
+                <input type="text" v-model="newText">
+                <button @click="addTask(newText)">Aggiungi</button>
             </div>
 
             <div class="task-list-container">
