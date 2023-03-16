@@ -26,7 +26,7 @@ const { createApp } = Vue
             },
             {
                 text: "Task 2",
-                done: false
+                done: true
             },
             {
                 text: "Task 3",
@@ -34,5 +34,9 @@ const { createApp } = Vue
             }
         ]
       }
+    }, 
+    methods : {
+        
+        
     }
   }).mount('#app')

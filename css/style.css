@@ -49,3 +49,6 @@
     font-weight: 600;
     font-size: large;
 }
+.line-through{
+    text-decoration: line-through;
+}
