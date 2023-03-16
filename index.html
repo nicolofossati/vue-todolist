@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
     <title>TODO list</title>
@@ -12,10 +20,36 @@
 <body>
     
     <div id="app">
-        {{ message }}
+        <div class="container">
+            <h1 class="title">To do list</h1>
+            <div class="create-task-container">
+                <input type="text">
+                <button>Aggiungi</button>
+            </div>
+
+            <div class="task-list-container">
+                <ul>
+                    <li>
+                        <span>Task 1</span> 
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                    <li>
+                        <span>Task 2</span> 
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                    <li>
+                        <span>Task 3</span> 
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
+    <!-- VUE JS -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- JAVASCRIPT -->
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

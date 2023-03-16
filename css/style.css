@@ -2,4 +2,50 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title{
+    text-align: center;
+    margin: 20px;
+}
+
+.create-task-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.create-task-container input{
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.create-task-container button{
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.task-list-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.task-list-container ul{
+    list-style: none;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgb(229, 229, 229);
+    border-radius: 15px;
+}
+
+.task-list-container li{
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(152, 151, 151);
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: large;
 }
