@@ -15,7 +15,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>BONUS todolist</title>
+    <title>BONUS2 todolist</title>
 </head>
 <body>
     
@@ -26,6 +26,7 @@
                 <input type="text" v-model="newText" @keyup.enter="addTask(newText)">
                 <button @click="addTask(newText)">Aggiungi</button>
             </div>
+            <span class="error-enter" v-show="check">Devi inserire almeno un carattere</span>
 
             <div class="task-list-container">
                 <ul v-if="tasks.length > 0">
