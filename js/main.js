@@ -22,11 +22,11 @@ const { createApp } = Vue
         tasks : [
             {
                 text: "Task 1",
-                done: false
+                done: true
             },
             {
                 text: "Task 2",
-                done: true
+                done: false
             },
             {
                 text: "Task 3",
@@ -36,7 +36,9 @@ const { createApp } = Vue
       }
     }, 
     methods : {
-        
+        remove_task(index){
+            this.tasks.splice(index,1);
+        }
         
     }
   }).mount('#app')

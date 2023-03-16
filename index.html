@@ -28,12 +28,13 @@
             </div>
 
             <div class="task-list-container">
-                <ul>
+                <ul v-if="tasks.length > 0">
                     <li v-for="(task,index) in tasks">
                         <span :class="(task.done)?'line-through':'' ">{{task.text}}</span> 
-                        <i class="fa-solid fa-xmark"></i>
+                        <i class="fa-solid fa-xmark" @click="remove_task(index)"></i>
                     </li>
                 </ul>
+                <span v-else>Non hai nessuna task!</span>
             </div>
         </div>
     </div>
