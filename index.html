@@ -29,16 +29,8 @@
 
             <div class="task-list-container">
                 <ul>
-                    <li>
-                        <span>Task 1</span> 
-                        <i class="fa-solid fa-xmark"></i>
-                    </li>
-                    <li>
-                        <span>Task 2</span> 
-                        <i class="fa-solid fa-xmark"></i>
-                    </li>
-                    <li>
-                        <span>Task 3</span> 
+                    <li v-for="task in tasks">
+                        <span>{{task.text}}</span> 
                         <i class="fa-solid fa-xmark"></i>
                     </li>
                 </ul>
